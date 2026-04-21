@@ -1,0 +1,40 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="200" height="200" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .static-grey {
+        fill: #808080;
+        fill-opacity: 0.15;
+      }
+    </style>
+  </defs>
+
+  <!-- 1. 中间三个灰色点 (静止不透明) -->
+  <circle class="static-grey" cx="42.9" cy="42.9" r="5.8" />
+  <circle class="static-grey" cx="60.1" cy="42.9" r="5.8" />
+  <circle class="static-grey" cx="42.9" cy="60.1" r="5.8" />
+
+  <!-- 2. 构成字母 G 的激活点 (每个点拥有独立的、基于对角线位置采样的纯色) -->
+  <g>
+    <!-- Top Row - 偏紫色系 (右上区域) -->
+    <circle cx="25.6" cy="25.6" r="5.8" fill="#525EFA" /> <!-- t=0.5 -->
+    <circle cx="42.9" cy="25.6" r="5.8" fill="#6D5CF8" /> <!-- t=0.66 -->
+    <circle cx="60.1" cy="25.6" r="5.8" fill="#8958F6" /> <!-- t=0.83 -->
+    <circle cx="77.4" cy="25.6" r="5.8" fill="#A855F7" /> <!-- t=1.0 (Pure Purple) -->
+    
+    <!-- Row 2 - 蓝紫过渡 -->
+    <circle cx="25.6" cy="42.9" r="5.8" fill="#3661FC" /> <!-- t=0.33 -->
+    
+    <!-- Row 3 - 核心 G 弯钩 -->
+    <circle cx="25.6" cy="60.1" r="5.8" fill="#1B63FE" /> <!-- t=0.16 -->
+    <circle cx="77.4" cy="60.1" r="5.8" fill="#6D5CF8" /> <!-- t=0.66 -->
+    <circle cx="60.1" cy="60.1" r="5.8" fill="#525EFA" /> <!-- t=0.5 -->
+    
+    <!-- Bottom Row - 偏蓝色系 (左下区域) -->
+    <circle cx="25.6" cy="77.4" r="5.8" fill="#0066FF" /> <!-- t=0 (Pure Blue) -->
+    <circle cx="42.9" cy="77.4" r="5.8" fill="#1B63FE" /> <!-- t=0.16 -->
+    <circle cx="60.1" cy="77.4" r="5.8" fill="#3661FC" /> <!-- t=0.33 -->
+    <circle cx="77.4" cy="77.4" r="5.8" fill="#525EFA" /> <!-- t=0.5 -->
+  </g>
+</svg>
