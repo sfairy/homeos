@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" id="width-change-curtains" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 200 200" style="enable-background:new 0 0 200 200;" xml:space="preserve">
+<style type="text/css">
+.st0{fill:#E0DFDE;}
+.st1{fill:#FF931E;}
+</style>
+
+<g>
+<!-- 背景圆圈 -->
+<g id="background">
+<circle class="st0" cx="100" cy="100" r="87"/>
+</g>
+
+<!-- 左窗帘 - 宽度从44px变为15px，位置保持在左边 -->
+<path class="st1" d="M51.1,151.4h44v-88h-44V151.4z">
+<animate attributeName="d" 
+         values="M51.1,151.4h44v-88h-44V151.4z;
+                 M51.1,151.4h15v-88h-15V151.4z;
+                 M51.1,151.4h44v-88h-44V151.4z" 
+         dur="3s" 
+         repeatCount="indefinite"/>
+</path>
+
+<!-- 右窗帘 - 宽度从44px变为15px，位置保持在右边 -->
+<path class="st1" d="M148.9,63.3h-44v88h44V63.3z">
+<animate attributeName="d" 
+         values="M148.9,63.3h-44v88h44V63.3z;
+                 M148.9,63.3h-15v88h15V63.3z;
+                 M148.9,63.3h-44v88h44V63.3z" 
+         dur="3s" 
+         repeatCount="indefinite"/>
+</path>
+
+<!-- 窗帘顶部装饰条 -->
+<path class="st1" d="M153.8,58.4H46.2v-9.8h107.6V58.4z"/>
+</g>
+</svg>

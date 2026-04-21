@@ -1,0 +1,22 @@
+.animate-shake[data-v-f26ec6a5] {
+  animation: 0.4s cubic-bezier(0.36, 0.07, 0.19, 0.97) both shake-f26ec6a5;
+}
+@keyframes shake-f26ec6a5 {
+  10%,
+  90% {
+    transform: translate(-1px);
+  }
+  20%,
+  80% {
+    transform: translate(2px);
+  }
+  30%,
+  50%,
+  70% {
+    transform: translate(-4px);
+  }
+  40%,
+  60% {
+    transform: translate(4px);
+  }
+}
