@@ -1,0 +1,23 @@
+FROM node:20-alpine
+
+WORKDIR /app
+
+COPY package.json package-lock.json ./
+RUN npm ci --only=production
+
+COPY dist ./dist
+COPY client ./client
+COPY floorplans ./floorplans
+COPY icons ./icons
+COPY prisma ./prisma
+
+RUN mkdir -p /data /config
+
+ENV NODE_ENV=production
+
+EXPOSE 8125
+
+COPY run.sh .
+RUN chmod +x run.sh
+
+CMD ["bash", "run.sh"]
